@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="cmc.ps.test.service.TransitiveClosureServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="transitiveClosureTest"/>
+          <include name="beforeTest"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cmc.ps.test.service.TransitiveClosureServiceTest -->
+      <class name="cmc.ps.test.service.OwnerServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="setUp"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cmc.ps.test.service.OwnerServiceTest -->
+      <class name="cmc.ps.test.service.HistoryServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- cmc.ps.test.service.HistoryServiceTest -->
+      <class name="cmc.ps.test.service.BusinessServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="setUp"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cmc.ps.test.service.BusinessServiceTest -->
+      <class name="cmc.ps.test.service.LegalEntityServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="setUp"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cmc.ps.test.service.LegalEntityServiceTest -->
+      <class name="cmc.ps.test.service.PhysicalPersonServiceTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- cmc.ps.test.service.PhysicalPersonServiceTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

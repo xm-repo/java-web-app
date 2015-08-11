@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1:8080/hibernate-maven-web/main/main.do" />
+<title>TP2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TP2</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/hibernate-maven-web/main/main.do</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Transitive property</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.1</td>
+	<td>regexp:[(].*[)] 3M Inc.</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.2</td>
+	<td>regexp:[(].*[)] American Express</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.3</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.1</td>
+	<td>regexp:[(].*[)] American Express</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.2</td>
+	<td>regexp:[(].*[)] Joseph Addison Jr</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.3</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].2.1</td>
+	<td>regexp:[(].*[)] American Express</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].2.2</td>
+	<td>regexp:[(].*[)] Nicholas Amhurst</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].2.3</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].3.1</td>
+	<td>regexp:[(].*[)] Caterpillar</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].3.2</td>
+	<td>regexp:[(].*[)] Jane Barker</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].3.3</td>
+	<td>60</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=regexp:[(].*[)] American Express</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Property')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.1</td>
+	<td>American Express</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.2</td>
+	<td>1982-08-30</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.3</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.1</td>
+	<td>regexp:[(].*[)] 3M Inc.</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.2</td>
+	<td>regexp:[(].*[)] American Express</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.3</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[3].1.1</td>
+	<td>regexp:[(].*[)] American Express</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[3].1.2</td>
+	<td>regexp:[(].*[)] [Joseph Addison Jr|Nicholas Amhurst]</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[3].1.3</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[3].2.1</td>
+	<td>regexp:[(].*[)] American Express</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[3].2.2</td>
+	<td>regexp:[(].*[)] [Joseph Addison Jr|Nicholas Amhurst]</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[3].2.3</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=regexp:[(].*[)] Joseph Addison Jr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Property</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.1</td>
+	<td>Joseph Addison Jr</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.2</td>
+	<td>Milston, Wiltshire, Home</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.1</td>
+	<td>regexp:[(].*[)] 3M Inc.</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.2</td>
+	<td>regexp:[(].*[)] American Express</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.3</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[3].2.1</td>
+	<td>regexp:[(].*[)] American Express</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[3].2.2</td>
+	<td>regexp:[(].*[)] [Joseph Addison Jr|Nicholas Amhurst]</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[3].2.3</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Physical persons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Property')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>There are no LE owners in data base </td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.1</td>
+	<td>Jane Barker</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[1].1.2</td>
+	<td>Blatherwick, Northamptonshire</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.1</td>
+	<td>regexp:[(].*[)] Caterpillar</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.2</td>
+	<td>regexp:[(].*[)] Jane Barker</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//table[2].1.3</td>
+	<td>60</td>
+</tr>
+</tbody></table>
+</body>
+</html>

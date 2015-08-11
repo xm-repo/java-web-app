@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="1457" started-at="2014-05-05T18:08:50Z" finished-at="2014-05-05T18:08:51Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="1457" started-at="2014-05-05T18:08:50Z" finished-at="2014-05-05T18:08:51Z">
+      <class name="cmc.ps.test.service.BusinessServiceTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:cmc.ps.test.service.BusinessServiceTest@3ac4a6d8]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="5" started-at="2014-05-05T21:08:50Z" finished-at="2014-05-05T21:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:cmc.ps.test.service.BusinessServiceTest@3ac4a6d8]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="1155" started-at="2014-05-05T21:08:50Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cmc.ps.test.service.BusinessServiceTest@3ac4a6d8]" name="setUp" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.BusinessServiceTest@3ac4a6d8]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="26" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.BusinessServiceTest.test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="test()[pri:0, instance:cmc.ps.test.service.BusinessServiceTest@3ac4a6d8]" name="test" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.BusinessServiceTest@3ac4a6d8]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.BusinessServiceTest.test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:cmc.ps.test.service.BusinessServiceTest@3ac4a6d8]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- cmc.ps.test.service.BusinessServiceTest -->
+      <class name="cmc.ps.test.service.OwnerServiceTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:cmc.ps.test.service.OwnerServiceTest@456c6746]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:cmc.ps.test.service.OwnerServiceTest@456c6746]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="4" started-at="2014-05-05T21:08:51Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cmc.ps.test.service.OwnerServiceTest@456c6746]" name="setUp" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.OwnerServiceTest@456c6746]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.OwnerServiceTest.test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="test()[pri:0, instance:cmc.ps.test.service.OwnerServiceTest@456c6746]" name="test" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.OwnerServiceTest@456c6746]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.OwnerServiceTest.test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:cmc.ps.test.service.OwnerServiceTest@456c6746]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- cmc.ps.test.service.OwnerServiceTest -->
+      <class name="cmc.ps.test.service.HistoryServiceTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:cmc.ps.test.service.HistoryServiceTest@106305aa]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:cmc.ps.test.service.HistoryServiceTest@106305aa]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="4" started-at="2014-05-05T21:08:51Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cmc.ps.test.service.HistoryServiceTest@106305aa]" name="setUp" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.HistoryServiceTest@106305aa]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.HistoryServiceTest.simpleTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="simpleTest()[pri:0, instance:cmc.ps.test.service.HistoryServiceTest@106305aa]" name="simpleTest" duration-ms="101" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.HistoryServiceTest@106305aa]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.HistoryServiceTest.simpleTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:cmc.ps.test.service.HistoryServiceTest@106305aa]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- cmc.ps.test.service.HistoryServiceTest -->
+      <class name="cmc.ps.test.service.TransitiveClosureServiceTest">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="4" started-at="2014-05-05T21:08:51Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.TransitiveClosureServiceTest.test() throws java.text.ParseException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="test" duration-ms="32" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.TransitiveClosureServiceTest.test() throws java.text.ParseException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.TransitiveClosureServiceTest.transitiveClosureTest(int[][],int[][],int[][],int[][]) throws java.text.ParseException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="transitiveClosureTest([[I, [[I, [[I, [[I)[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="transitiveClosureTest" duration-ms="1" started-at="2014-05-05T21:08:51Z" data-provider="makeTest" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[[I@2c1833d5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[I@68f2fb90]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[[I@2861e0c4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[[I@31eb7892]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transitiveClosureTest -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.TransitiveClosureServiceTest.transitiveClosureTest(int[][],int[][],int[][],int[][]) throws java.text.ParseException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.TransitiveClosureServiceTest.transitiveClosureTest(int[][],int[][],int[][],int[][]) throws java.text.ParseException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="transitiveClosureTest([[I, [[I, [[I, [[I)[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="transitiveClosureTest" duration-ms="91" started-at="2014-05-05T21:08:51Z" data-provider="makeTest" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[[I@5a38d2d8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[I@489a912e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[[I@1bb1883f]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[[I@2467ee4d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transitiveClosureTest -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.TransitiveClosureServiceTest.transitiveClosureTest(int[][],int[][],int[][],int[][]) throws java.text.ParseException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:cmc.ps.test.service.TransitiveClosureServiceTest@4e453182]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- cmc.ps.test.service.TransitiveClosureServiceTest -->
+      <class name="cmc.ps.test.service.PhysicalPersonServiceTest">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:cmc.ps.test.service.PhysicalPersonServiceTest@7e5f5681]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="4" started-at="2014-05-05T21:08:51Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:cmc.ps.test.service.PhysicalPersonServiceTest@7e5f5681]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.PhysicalPersonServiceTest@7e5f5681]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.PhysicalPersonServiceTest.test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cmc.ps.test.service.PhysicalPersonServiceTest@7e5f5681]" name="setUp" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test()[pri:0, instance:cmc.ps.test.service.PhysicalPersonServiceTest@7e5f5681]" name="test" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:cmc.ps.test.service.PhysicalPersonServiceTest@7e5f5681]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.PhysicalPersonServiceTest@7e5f5681]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.PhysicalPersonServiceTest.test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- cmc.ps.test.service.PhysicalPersonServiceTest -->
+      <class name="cmc.ps.test.service.LegalEntityServiceTest">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:cmc.ps.test.service.LegalEntityServiceTest@54fb2274]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="4" started-at="2014-05-05T21:08:51Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:cmc.ps.test.service.LegalEntityServiceTest@54fb2274]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cmc.ps.test.service.LegalEntityServiceTest@54fb2274]" name="setUp" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.LegalEntityServiceTest@54fb2274]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.LegalEntityServiceTest.test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="test()[pri:0, instance:cmc.ps.test.service.LegalEntityServiceTest@54fb2274]" name="test" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:cmc.ps.test.service.LegalEntityServiceTest@54fb2274]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cmc.ps.test.service.LegalEntityServiceTest.test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:cmc.ps.test.service.LegalEntityServiceTest@54fb2274]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2014-05-05T21:08:51Z" finished-at="2014-05-05T21:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- cmc.ps.test.service.LegalEntityServiceTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

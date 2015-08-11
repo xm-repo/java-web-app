@@ -1,0 +1,271 @@
+var links = [
+                 {source: "Microsoft", target: "Amazon", type: "licensing"},
+                 {source: "Microsoft", target: "HTC", type: "licensing"},
+                 {source: "Samsung", target: "Apple", type: "suit"},
+                 {source: "Motorola", target: "Apple", type: "suit"},
+                 {source: "Nokia", target: "Apple", type: "resolved"},
+                 {source: "HTC", target: "Apple", type: "suit"},
+                 {source: "Kodak", target: "Apple", type: "suit"},
+                 {source: "Microsoft", target: "Barnes & Noble", type: "suit"},
+                 {source: "Microsoft", target: "Foxconn", type: "suit"},
+                 {source: "Oracle", target: "Google", type: "suit"},
+                 {source: "Apple", target: "HTC", type: "suit"},
+                 {source: "Microsoft", target: "Inventec", type: "suit"},
+                 {source: "Samsung", target: "Kodak", type: "resolved"},
+                 {source: "LG", target: "Kodak", type: "resolved"},
+                 {source: "RIM", target: "Kodak", type: "suit"},
+                 {source: "Sony", target: "LG", type: "suit"},
+                 {source: "Kodak", target: "LG", type: "resolved"},
+                 {source: "Apple", target: "Nokia", type: "resolved"},
+                 {source: "Qualcomm", target: "Nokia", type: "resolved"},
+                 {source: "Apple", target: "Motorola", type: "suit"},
+                 {source: "Microsoft", target: "Motorola", type: "suit"},
+                 {source: "Motorola", target: "Microsoft", type: "suit"},
+                 {source: "Huawei", target: "ZTE", type: "suit"},
+                 {source: "Ericsson", target: "ZTE", type: "suit"},
+                 {source: "Kodak", target: "Samsung", type: "resolved"},
+                 {source: "Apple", target: "Samsung", type: "suit"},
+                 {source: "Kodak", target: "RIM", type: "suit"},
+                 {source: "Nokia", target: "Qualcomm", type: "suit"}
+               ];
+
+
+
+		<dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>javax.servlet.jsp.jstl</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+1. ЏроизведениЯ �експира или его современников, которые произвели на менЯ впечатление.
+(почему мне нравитсЯ-не нравитсЯ этот текст: содержание, Язык, сочетаниЯ Языка и содержаниЯ, место, которое занимает
+этот текст в творчестве шекспира, как он отражает историко-культурную ситуацию в англии того времени)
+
+
+
+public List<Owner> getTransitiveClosure(List<PhysicalPerson> physicalPersons, 
+			List<LegalEntity> legalEntities) {
+	
+        List<Owner> owners = ownerDAO.findAll();
+        List<Owner> transitiveClosureSet = new ArrayList<Owner>();
+
+        Set<Integer> physicalPersonOwners = new HashSet<Integer>();
+        if(physicalPersons != null) {
+            for(PhysicalPerson physicalPerson : physicalPersons) {
+	            physicalPersonOwners.add(physicalPerson.getId());	
+            }
+        }
+
+        Set<Integer> legalEntitiesOwners = new HashSet<Integer>();
+        if(legalEntities != null) {
+            for(LegalEntity legalEntity : legalEntities) {
+                legalEntitiesOwners.add(legalEntity.getId());
+            }
+        }
+
+        boolean anotherStep = true;
+        Integer pid, leid, le;
+        
+        while(anotherStep) {
+            for(Owner owner : owners) {         	
+    	        
+            	anotherStep = false;
+    	        pid = owner.getPhysicalPerson().getId();
+                leid = owner.getLegalEntity1().getId();
+                le = owner.getLegalEntity2().getId();
+        
+                if(legalEntitiesOwners.contains(le) || (pid != null && physicalPersonOwners.contains(pid)) 
+        		    || legalEntitiesOwners.contains(leid)) {
+        	
+                	transitiveClosureSet.add(owner);
+        	        
+                	anotherStep = anotherStep || (pid != null && physicalPersonOwners.add(pid));
+                	anotherStep = anotherStep || (leid != null && legalEntitiesOwners.add(leid));
+                	anotherStep = anotherStep || legalEntitiesOwners.add(le);
+            	                	
+                	owners.remove(owner);	
+                }    	 
+            }
+        }
+
+        List<Owner> transitiveClosureList = new ArrayList<Owner>();
+		transitiveClosureList.addAll(transitiveClosureSet);
+		return transitiveClosureList;
+    }
+    
+    
+    	public List<Owner> getTransitiveClosure2(List<PhysicalPerson> physicalPersons, 
+			List<LegalEntity> legalEntities) {
+		
+		//люди, которых нужно добавить в замыкание 
+		Set<PhysicalPerson> addPOwnersSet = new HashSet<PhysicalPerson>();
+		addPOwnersSet.addAll(physicalPersons);
+		
+		//добавленные в замыкание люди
+		Set<PhysicalPerson> addedPOwnersSet = new HashSet<PhysicalPerson>();
+
+        //компании, которые нужно добавить в замыкание
+		Set<LegalEntity> addLEOwnersSet = new HashSet<LegalEntity>();
+        addLEOwnersSet.addAll(legalEntities);
+        
+        //добавленные в замыкание компании
+        Set<LegalEntity> addedLEOwnersSet = new HashSet<LegalEntity>();
+        
+        Set<Owner> transitiveClosureSet = new HashSet<Owner>();
+        
+        List<Owner> tempOwners = null;
+        LegalEntity le = null;
+        PhysicalPerson p;
+        List<Business> businesses;
+
+        while(!addLEOwnersSet.isEmpty() || !addPOwnersSet.isEmpty()) {
+        	
+        	//мы - человек
+        	for(PhysicalPerson physicalPerson : addPOwnersSet) {
+        		
+        		//выбираем фирмы, которыми мы владеем и добавлЯем в замыкание
+        		tempOwners = physicalPerson.getOwners();
+        		transitiveClosureSet.addAll(tempOwners);
+        		
+        		//каждую фирму, которой мы владеем, добавлЯем в список необработанных
+        		for(Owner owner : tempOwners) {
+        			le = owner.getLegalEntity2(); 
+        			if(!addedLEOwnersSet.contains(le)) {
+        				addLEOwnersSet.add(le);
+        			}
+        		}
+        		
+        		addPOwnersSet.remove(physicalPerson);
+        		addedPOwnersSet.add(physicalPerson);
+        	}
+        	
+        	//мы - фирма
+        	for(LegalEntity legalEntity : addLEOwnersSet) {
+        		
+        		//выбираем фирмы, которые нами владеют и добавлЯем в замыкание
+        		tempOwners = legalEntity.getOwners2();
+        		transitiveClosureSet.addAll(tempOwners);
+        		
+        		//человека или фирму, который/аЯ нами владеют, добавлЯем в список необработанных
+        		for(Owner owner : tempOwners) {
+        			//если нами владеет человек
+        			p = owner.getPhysicalPerson();
+        			if(p != null && !addedPOwnersSet.contains(p)) {
+        				addPOwnersSet.add(p);	
+        			}
+        			//если нами владеет другаЯ фирма
+        			le = owner.getLegalEntity1();
+        			if(le != null && !addedLEOwnersSet.contains(le)) {
+        				addLEOwnersSet.add(le);	
+        			}
+        		}
+        		
+        		//выбираем фирмы, которыми мы владеем и добавлЯем в замыкание
+        		tempOwners = legalEntity.getOwners1();
+        		transitiveClosureSet.addAll(tempOwners);
+        		
+        		//каждую фирму, которой мы владеем, добавлЯем в список необработанных
+        		for(Owner owner : tempOwners) {
+        			le = owner.getLegalEntity2();
+        			if(!addedLEOwnersSet.contains(le)) {
+        				addLEOwnersSet.add(le);	
+        			}
+        		}
+        		
+        		//добавлЯем в необработанные все фирмы, что нас поглотили 
+        		businesses = legalEntity.getBusinesses1();
+        		for(Business b : businesses) {
+        			le = b.getLegalEntity2();
+        			if(!addedLEOwnersSet.contains(le)) {
+        				addLEOwnersSet.add(le);	
+        			}
+        		}
+        		
+        		//добавлЯем в необработанные все поглощенные фирмы
+        		businesses = legalEntity.getBusinesses2();
+        		for(Business b : businesses) {
+        			le = b.getLegalEntity1();
+        			if(!addedLEOwnersSet.contains(le)) {
+        				addLEOwnersSet.add(le);	
+        			}
+        		}
+        		
+        		addLEOwnersSet.remove(legalEntity);
+        		addedLEOwnersSet.add(legalEntity);
+        		
+        	}       	
+        }
+        
+		
+		List<Owner> transitiveClosureList = new ArrayList<Owner>();
+		transitiveClosureList.addAll(transitiveClosureSet);
+		return transitiveClosureList;
+	}
+	
+	
+	             var links = [];
+               
+              <c:forEach items="${owners}" var="owner">
+                  <c:choose> 
+                  <c:when test="${empty owner.physicalPerson}">
+                  
+                      <c:choose>
+                      <c:when test="${owner.property == 100}"> 
+                  
+                      links.push({source: "<c:out value="${owner.legalEntity2.businessName}"/>", target: "<c:out value="${owner.legalEntity1.businessName}"/>", 
+                          type: "licensing", group: "13", g2: "13"});    
+                      
+                      </c:when>
+                      <c:otherwise>
+                      
+                      links.push({source: "<c:out value="${owner.legalEntity2.businessName}"/>", target: "<c:out value="${owner.legalEntity1.businessName}"/>", 
+                          prop: "<c:out value="${owner.property}"/>", type: "suit", group: "13", g2: "13"});    
+                  
+                      </c:otherwise>
+                      </c:choose>
+                  
+                                
+                  
+                  </c:when>                                  
+                  </c:choose> 
+              </c:forEach>
+              
+              // <c:forEach items="${businesses}" var="business">
+              //links.push({source: "<c:out value="${business.legalEntity2.businessName}"/>", target: "<c:out value="${business.legalEntity1.businessName}"/>", 
+            	//  type: "licensing", group: "13"});
+              //</c:forEach>
+              
+              <c:forEach items="${owners}" var="owner">
+                  <c:choose> 
+                  <c:when test="${empty owner.legalEntity2}">               
+
+                  links.push({source: "<c:out value="${owner.physicalPerson.fullName}"/>", target: "<c:out value="${owner.legalEntity1.businessName}"/>", 
+            	      prop: "<c:out value="${owner.property}"/>", type: "resolved", group: "9", g2: "13"});
+              
+                  </c:when>                              
+                  </c:choose> 
+              </c:forEach>
+                            
+                             
+              var nodes = {};
+
+              links.forEach(function(link) {
+                  link.source = nodes[link.source] || (nodes[link.source] = {name: link.source, group: link.group});
+                  link.target = nodes[link.target] || (nodes[link.target] = {name: link.target, group: link.g2});
+              });
